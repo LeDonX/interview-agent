@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: skills-agent-example
+  ai:
+    openai:
+      api-key: ${api_key}
+      base-url: ${api_url}
+      chat:
+        options:
+          model: gpt-5.4
+#    dashscope:
+#      api-key: ${AI_DASHSCOPE_API_KEY}
+#      chat:
+#        options:
+#          enable-thinking: true
+#    minimax:
+#      api-key: ${MINIMAX_API_KEY}
+
+server:
+  port: 8080
+
+logging:
+    level:
+      org.springframework.ai: DEBUG
+      com.alibaba.cloud.ai: DEBUG
